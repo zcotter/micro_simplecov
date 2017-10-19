@@ -42,7 +42,7 @@ function onGitProjectDirectoryFound(output, filePath)
     local coverageFilePath = coverageFilePath(output)
     local coverageFile = io.open(coverageFilePath, 'rb')
     if coverageFile ~= nil then
-      markCoverage(coverageFile)
+      markCoverage(coverageFile, filePath)
     end
   else
     -- Add error to the log file if we weren't able to determine project dir
@@ -50,7 +50,7 @@ function onGitProjectDirectoryFound(output, filePath)
   end
 end
 
-function markCoverage(coverageFile)
+function markCoverage(coverageFile, filePath)
   local coverageData = coverageFile:read("*a")
   -- Parsing json here is a PITA, so we will do it manually instead.
   -- Remove whitespace
