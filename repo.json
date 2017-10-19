@@ -1,0 +1,23 @@
+[
+  {
+    "Name": "micro_simplecov",
+    "Description": "Mark lines needing test coverage in Ruby+SimpleCov Projects",
+    "Tags": [
+      "ruby",
+      "rails",
+      "simplecov",
+      "testing",
+      "minitest",
+      "rspec"
+    ],
+    "Versions": [
+      {
+        "Version": "0.0.1",
+        "Url": "https://github.com/zcotter/micro_simplecov/archive/0.0.1.zip",
+        "Require": {
+          "micro": ">=1.0.3"
+        }
+      }
+    ]
+  }
+]

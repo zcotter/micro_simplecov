@@ -1,3 +1,5 @@
+VERSION = "0.0.1"
+
 -- Runs everytime a file is saved
 function onSave(view)
   -- Start an asynchronous process to attempt to identify the current file's
