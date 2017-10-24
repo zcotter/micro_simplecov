@@ -5,7 +5,7 @@ function onSave(view)
   -- Start an asynchronous process to attempt to identify the current file's
   --   project directory
   findProjectDirectory(view)
-
+  CurView():ClearGutterMessages("micro_simplecov")
   -- false => Don't need to move the cursor
   return false
 end
